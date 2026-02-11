@@ -41,6 +41,8 @@ public class GameUIManager : MonoBehaviour
     [SerializeField]
     private GameObject dimWhenChoosingPanel;
     [SerializeField]
+    private GameObject errorMessage;
+    [SerializeField]
     private GameObject gameFinishPanelInfo;
     [SerializeField]
     private MyPlayerInfoUIManager myPlayerInfoUIManager;
