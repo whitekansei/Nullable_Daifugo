@@ -15,5 +15,9 @@ https://drive.google.com/drive/folders/1aqiAbxFIaqgqM4HzAD7g_qWZ5cMDcOrp?usp=dri
 6. ダウンロードしたファイル全てを、エクスプローラーからドラッグ&ドロップでFontsフォルダに配置しください。
 7. 全シーンのUIが文字化けしていないかどうか確認してください。（「□□□」とかのままだとまずい）
 
+8.以下のリンクから「.editorconfig」をダウンロードし、「.Nullable_Daifugo.sln」があるディレクトリと同じ階層に配置してください。
+これが無いとコメントが文字化けして死にます。
+https://drive.google.com/drive/folders/1DS9xTWcggAMF3I4csNO3NYVVpSWpbzZk?usp=drive_link
+
 ・お願い
 皆様のGitHubユーザー名を教えてください。ご招待します。
