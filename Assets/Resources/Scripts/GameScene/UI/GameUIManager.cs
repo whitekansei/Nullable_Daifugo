@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -58,5 +58,15 @@ public class GameUIManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void ChangeGetReadyButtonText(int getReadyPlayerNum, int allPlayerNum)
+    {
+        //ボタンの文字を変更
+        var getReadyButtonText = getReadyButtonTextObj.GetComponent<TextMeshProUGUI>();
+        getReadyButtonText.text = $"参加待ち... {getReadyPlayerNum}/{allPlayerNum}";
+    }
+    public void ChangeActiveOfGetReadyButton(bool isActive)
+    {
+        getReadyButtonObj.SetActive(isActive);
     }
 }

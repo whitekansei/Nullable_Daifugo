@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,5 +25,22 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnClickReadyButton()
+    {
+        onlineMatchingManager.SetReadyProperty();
+    }
+    public void UpdateReadyButtonText(int readyPlayerNum, int allPlayerNum)
+    {
+        gameUIManager.ChangeGetReadyButtonText(readyPlayerNum, allPlayerNum);
+    }
+    public void GameStart()
+    {
+        //自分がホストなら、ゲーム開始処理を行う
+        if (onlineMatchingManager.IsHostPlayer())
+        {
+            Debug.Log("ゲームスタート！");
+            gameUIManager.ChangeActiveOfGetReadyButton(false); //仮置き。ここではなくGameNetWorkManagerに書いて全員に展開する
+        }
     }
 }

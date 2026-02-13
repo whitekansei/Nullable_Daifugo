@@ -1475,7 +1475,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 487219597}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165414579}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnClickReadyButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &487219597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1997,7 +2009,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 487219595}
   - {fileID: 1460785517}
   - {fileID: 41728489}
   - {fileID: 929271874}
@@ -2006,6 +2017,7 @@ RectTransform:
   - {fileID: 53710976}
   - {fileID: 1779914405}
   - {fileID: 1913717168}
+  - {fileID: 487219595}
   - {fileID: 1964090188}
   m_Father: {fileID: 787416672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

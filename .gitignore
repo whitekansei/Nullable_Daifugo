@@ -38,6 +38,10 @@
 *.user
 *.userprefs
 
+# Test scenes
+#Assets/Scenes/Test_*.unity
+#Assets/Scenes/Test_*.unity.meta
+
 # Fonts (large files)
 Assets/Resources/Fonts/
 Assets/Resources/Fonts.meta
